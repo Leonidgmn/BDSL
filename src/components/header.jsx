@@ -16,6 +16,7 @@ const Header = () => {
                             <li><a href="#">ВИКЛАДАЧІ</a></li>
                             <li><a href="#">НОВИНИ</a></li>
                             <li><a href="#">КОНТАКТИ</a></li>
+                            <li> <button> ЗАПИСАТИСЬ</button></li>
                         </ul>
                     </div>
                     <div className="navigation-button">
