@@ -21,6 +21,20 @@ header{
 
 
 }
+.navigation ul li button{
+    background: var(--main-light);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem ;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navigation ul li button:hover{
+    background: var(--main);
+    font-size: 1.2rem ;
+}
 .navigation li{
     margin: 1rem;
 }
