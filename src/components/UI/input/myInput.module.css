@@ -1,0 +1,16 @@
+.myInput{
+    width: 100%;
+    border: 1px solid var(--main-light);
+    padding: 0.4rem;
+    border-radius: 3px;
+    margin-top: 1rem;
+}
+.myInput:focus{
+    border: 3px solid var(--main-light);
+    outline: none;
+    padding: 0.7rem;
+
+}
+.myInput:after{
+    transition: .2s ease-in-out;
+}
