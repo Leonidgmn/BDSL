@@ -1,3 +1,35 @@
+Before first start use 
+# 'npm install' - it will install react and libraries
+Then
+# 'npm start'
+
+
+for React Navigation used https://reactrouter.com/docs/en/v6
+
+### important!!! V6 differ than V5!!!
+
+for installation use 
+### 'npm install react-router-dom@6'
+
+pagesNavigation - not used. It is just for code check or ypu can use it in other 
+
+
+Input data
+https://www.youtube.com/watch?v=CXa0f4-dWi4 - based video about react router dom (V5!)
+and burger hiding.
+
+https://www.youtube.com/watch?v=N0LWLkaJz1I - ru version. 
+
+about hook useState! read here https://uk.reactjs.org/docs/hooks-overview.html
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

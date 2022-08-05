@@ -1,7 +1,7 @@
 header{
     background: linear-gradient(to right,var(--main-light),var(--shadow));
 }
-.header {
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -14,6 +14,25 @@ header{
 }
 .navigation{
     display: none;
+}
+
+.navigation-burger-open {
+    display: flex;
+    
+
+
+}
+.header-burger-open {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    
+
+}
+.header-burger-open img{
+    max-width: 5rem;
+    border-radius: 50%;
+    margin: 1rem;
 }
 .navigation ul{
     display: flex;
@@ -60,12 +79,12 @@ header{
     .navigation{
         display: block;
     }
+    
 }
 @media  (min-width: 1440px){
     html{
         font-size: 22px;
     }
-
 }
 @media  (min-width: 1920px){
     html{
@@ -182,6 +201,8 @@ font-size: 1rem;
     .dance-inside-item img{
         object-position: 80% 30%;
     }
+    
+    
 }
 @media  (min-width: 1440px){
     .dance-inside-item{
@@ -262,6 +283,7 @@ font-size: 1rem;
         padding: 4rem;
 
     }
+    
 }
 
 footer{
@@ -281,4 +303,29 @@ footer{
     margin: 1rem;
     color: var(--main);
     cursor: pointer;
+}
+.conteiner-contacts{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.map-container{
+    margin: 40px;
+    width: 800px;
+    height: 400px
+}
+.contacts-item h4{
+    padding: 1rem;
+}
+
+@media  (max-width: 768px){
+    .conteiner-contacts{
+    flex-direction: column;
+    }
+    .map-container{
+        margin: 15px;
+        width: 350px;
+        height: 350px
+    }
 }

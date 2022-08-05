@@ -4,6 +4,9 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Team from "./components/team";
 import { Routes, Route, Link } from "react-router-dom";
+import Schedule from "./components/schedule";
+import News from "./components/news";
+import Contacts from "./components/contacts";
 function App() {
     function Home() {
         return (
@@ -40,11 +43,13 @@ function App() {
     <div className="App">
         <Header/>
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
+            <Route path="/" element={<MainPage />}/>
+            <Route path="/schedule" element={<Schedule />}/> 
+            <Route path="/team" element={<Team />}/> 
+            <Route path="/news" element={<News />}/> 
+            <Route path="/contacts" element={<Contacts />}/>
         </Routes>
-      <MainPage/>
-<Team/>
+        
       <Footer/>
     </div>
   );
