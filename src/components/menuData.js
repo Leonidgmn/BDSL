@@ -5,27 +5,27 @@
 export const MenuData = [
   {
     title: 'ГОЛОВНА',
-    path: '/mainPage',
-    cName: 'noClass'
+    path: '/',
+    cName: 'undefined'
   },
   {
     title: 'РОЗКЛАД',
     path: '/schedule',
-    cName: 'noClass'
+    cName: 'undefined'
   },
   {
     title: 'ВИКЛАДАЧІ',
     path: '/team',
-    cName: 'noClass'
+    cName: 'undefined'
   },
   {
     title: 'НОВИНИ',
     path: '/news',
-    cName: 'noClass'
+    cName: 'undefined'
   },
   {
     title: 'КОНТАКТИ',
     path: '/contacts',
-    cName: 'noClass'
+    cName: 'undefined'
   }
 ];

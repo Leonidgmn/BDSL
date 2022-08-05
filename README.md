@@ -20,6 +20,8 @@ and burger hiding.
 
 https://www.youtube.com/watch?v=N0LWLkaJz1I - ru version. 
 
+about hook useState! read here https://uk.reactjs.org/docs/hooks-overview.html
+
 
 
 
