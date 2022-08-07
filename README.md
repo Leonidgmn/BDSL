@@ -1,4 +1,4 @@
-commit Alex
+
 
 Before first start use 
 # 'npm install' - it will install react and libraries
