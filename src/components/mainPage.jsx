@@ -10,8 +10,16 @@ import CarouselMainPage from './carouselMainPage.jsx';
 const MainPage = () => {
     return (
         <div>
-
             <CarouselMainPage />
+            
+            <div className="content" >
+                <div className='main-page' >
+                    <div><span className='hashtag'>#BDSLviv</span>
+                        <h1> <span>B</span>ACHATA <br /><span>D</span>ANCE <br /><span>S</span>CHOOL <br /><span>L</span>VIV</h1></div>
+
+                    <p>Танці, що <br />прив'язують</p>
+                </div>
+            </div>
 
             <section id='dance'>
                 <div className="content">
