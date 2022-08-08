@@ -9,7 +9,7 @@ import kizomba from "../img/kizomba.jpg";
 const MainPage = () => {
     return (
         <div>
-            <section id='mainPage'style={{background:'url("'+mainImg+'")',backgroundRepeat:"no-repeat", backgroundSize: "cover",
+            <section id='mainPage' style={{background:'url("'+mainImg+'")',backgroundRepeat:"no-repeat", backgroundSize: "cover",
             backgroundPosition:'top center'}}>
                 <div className="content" >
 
