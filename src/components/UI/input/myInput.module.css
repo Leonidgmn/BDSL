@@ -14,3 +14,11 @@
 .myInput:after{
     transition: .2s ease-in-out;
 }
+.myInput:invalid{
+    background: #ffdddd;;
+
+}
+
+.myInput:valid {
+    background: #ddffdd;
+}
