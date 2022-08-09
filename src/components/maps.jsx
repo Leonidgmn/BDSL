@@ -30,7 +30,7 @@ function Maps() {
 
       if (!isLoaded) return (<div>Loading...</div>)
   return (
-    <div>
+    <div className="map-containers">
       <GoogleMap
         mapContainerClassName='map-container'
         center={center}
@@ -46,8 +46,3 @@ function Maps() {
 }
 
 export default Maps
-
-
-
-/*'AIzaSyCwl3AALufo-cure3qw8S5vFgnBFvEklOY'*/
-/*AIzaSyDiXUaP4IyTq7KERIuZlpTMNEF9ePq8Eds*/
