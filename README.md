@@ -5,8 +5,8 @@ Before first start use
 Then
 # 'npm start'
 
-Libraries used in the project:
-Maps:
+Libraries used in the project: <br>
+Maps:<br>
 https://www.npmjs.com/package/@react-google-maps/api
 npm i @react-google-maps/api
 
