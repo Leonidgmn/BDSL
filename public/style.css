@@ -335,3 +335,27 @@ footer{
     color: var(--main);
     cursor: pointer;
 }
+.conteiner-contacts{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.map-container{
+    margin: 40px;
+    width: 800px;
+    height: 400px
+}
+.contacts-item h4{
+    padding: 1rem;
+}
+
+@media  (max-width: 768px){
+    .conteiner-contacts{
+    flex-direction: column;
+    }
+    .map-container{
+        margin: 15px;
+        width: 350px;
+        height: 350px
+    }
