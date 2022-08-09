@@ -1,26 +1,27 @@
 import React from 'react';
+import mainImg from "../img/PeopleTrial.jpg";
 import bachata from "../img/bachata.jpg";
 import lsalsa from "../img/salsaLatina.jpg";
 import ksalsa from "../img/salsaCubana.jpg";
 import zuk from "../img/zuk.jpg";
 import kizomba from "../img/kizomba.jpg";
 
-import CarouselMainPage from './carouselMainPage.jsx';
-
 const MainPage = () => {
     return (
         <div>
-            <CarouselMainPage />
-            
-            <div className="content" >
-                <div className='main-page' >
-                    <div><span className='hashtag'>#BDSLviv</span>
-                        <h1> <span>B</span>ACHATA <br /><span>D</span>ANCE <br /><span>S</span>CHOOL <br /><span>L</span>VIV</h1></div>
+            <section id='mainPage'style={{background:'url("'+mainImg+'")',backgroundRepeat:"no-repeat", backgroundSize: "cover",
+            backgroundPosition:'top center'}}>
+                <div className="content" >
 
-                    <p>Танці, що <br />прив'язують</p>
+                    <div className='main-page' >
+                        <div><span className='hashtag'>#BDSLviv</span>
+                            <h1> <span>B</span>ACHATA <br/><span>D</span>ANCE <br/><span>S</span>CHOOL <br/><span>L</span>VIV</h1></div>
+
+                        <p>Танці, що <br/>прив'язують</p>
+                    </div>
                 </div>
-            </div>
 
+            </section>
             <section id='dance'>
                 <div className="content">
                     <div className="dance-list">
@@ -28,7 +29,7 @@ const MainPage = () => {
                             <h3>БАЧАТА</h3>
                             <h4>коротка цитата про танець</h4>
                             <div className='dance-inside-item'>
-                                <div><img src={bachata} alt="" /></div>
+                                <div><img src={bachata} alt=""/></div>
 
                                 <p>
                                     ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus
@@ -47,7 +48,7 @@ const MainPage = () => {
                             <h3>ЛІНІЙНА САЛЬСА</h3>
                             <h4>коротка цитата про танець</h4>
                             <div className='dance-inside-item'>
-                                <div><img src={lsalsa} alt="" /></div>
+                                <div><img src={lsalsa} alt=""/></div>
 
 
                                 <p>Ut enim ad minima veniam, consectetur adipiscing elit, quae ab illo inventore veritatis
@@ -63,7 +64,7 @@ const MainPage = () => {
                             <h3>КУБИНСЬКА САЛЬСА</h3>
                             <h4>коротка цитата про танець</h4>
                             <div className='dance-inside-item'>
-                                <div><img src={ksalsa} alt="" /></div>
+                                <div><img src={ksalsa} alt=""/></div>
 
 
                                 <p>nulla pariatur. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus
@@ -79,7 +80,7 @@ const MainPage = () => {
                             <h3>ЗУК</h3>
                             <h4>коротка цитата про танець</h4>
                             <div className='dance-inside-item'>
-                                <div><img src={zuk} alt="" /></div>
+                                <div><img src={zuk} alt=""/></div>
 
 
                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus, n
@@ -93,7 +94,7 @@ const MainPage = () => {
                             <h3>КІЗОМБА</h3>
                             <h4>коротка цитата про танець</h4>
                             <div className='dance-inside-item'>
-                                <div><img src={kizomba} alt="" /></div>
+                                <div><img src={kizomba} alt=""/></div>
 
 
                                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus, n
