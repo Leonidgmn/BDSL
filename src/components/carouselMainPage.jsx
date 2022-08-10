@@ -2,6 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
+//111
 import mainImg from "../img/PeopleTrial.jpg";
 import mainImg1 from "../img/main-photo-1.jpg";
 import mainImg2 from "../img/main-photo-2.jpg";
