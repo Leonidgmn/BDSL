@@ -9,9 +9,8 @@ import CarouselMainPage from './carouselMainPage.jsx';
 
 const MainPage = () => {
     return (
-        <div>
-            <CarouselMainPage />
-            
+        <>
+    <CarouselMainPage>
             <div className="content" >
                 <div className='main-page' >
                     <div><span className='hashtag'>#BDSLviv</span>
@@ -20,7 +19,7 @@ const MainPage = () => {
                     <p>Танці, що <br />прив'язують</p>
                 </div>
             </div>
-
+            </CarouselMainPage>
             <section id='dance'>
                 <div className="content">
                     <div className="dance-list">
@@ -105,7 +104,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     );
 };
 
