@@ -8,8 +8,9 @@ const Header = ({setModal}) => {
     //this is hook useState. read in readme file
     const [burgerStatus, setBurger] = useState(true);
 
-    const showMenu = () => {setBurger(!burgerStatus)
-        /*console.log(burgerStatus)*/};
+    const showMenu = () => {setBurger(!burgerStatus)};
+    const hideMenu = () => {setBurger(true)};
+
 
     return (
         <header>
@@ -22,7 +23,7 @@ const Header = ({setModal}) => {
                         <ul>
                             {MenuData.map((item, index) => {
                                 return (
-                                    <li key={index} // https://ru.react.js.org/docs/lists-and-keys.html about keys props!!! important
+                                    <li key={index} onClick={hideMenu}// https://ru.react.js.org/docs/lists-and-keys.html about keys props!!! important
                                         /*className={item.cName}*/>
                                         <Link to={item.path}>
                                             <span>{item.title}</span>
