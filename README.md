@@ -7,8 +7,8 @@ Then
 
 Libraries used in the project: <br>
 Maps:<br>
-https://www.npmjs.com/package/@react-google-maps/api
-npm i @react-google-maps/api
+https://www.npmjs.com/package/@react-google-maps/api<br>
+npm i @react-google-maps/api<br>
 Video:<br>
 https://www.youtube.com/watch?v=9e-5QHpadi0<br>
 https://www.youtube.com/watch?v=4PrpRCTxcno&t=55s
