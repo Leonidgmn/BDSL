@@ -9,6 +9,9 @@ Libraries used in the project: <br>
 Maps:<br>
 https://www.npmjs.com/package/@react-google-maps/api
 npm i @react-google-maps/api
+Video:
+https://www.youtube.com/watch?v=9e-5QHpadi0
+https://www.youtube.com/watch?v=4PrpRCTxcno&t=55s
 
 
 for React Navigation used https://reactrouter.com/docs/en/v6
