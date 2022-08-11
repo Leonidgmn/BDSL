@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; 
 import { Link } from 'react-router-dom';
-import { MenuData } from './menuData';
+import { MenuData } from '../data/menuData';
 
 function PagesNavigation() {
 //taking array from MenuData and display menu items List. So we can add more menu 

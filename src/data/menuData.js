@@ -9,6 +9,11 @@ export const MenuData = [
     cName: 'undefined'
   },
   {
+    title: 'ТАНЦІ',
+    path: '/dance',
+    cName: 'undefined'
+  },
+  {
     title: 'РОЗКЛАД',
     path: '/schedule',
     cName: 'undefined'

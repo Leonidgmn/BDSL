@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import MyInput from "./UI/input/MyInput";
 import MyModal from "./UI/modal/MyModal";
 import { send } from 'emailjs-com';
+import MyButton from "./UI/button/MyButton";
 const Respond = ({modal, setModal}) => {
     const [form, setForm]=useState({
         name:'',
@@ -55,12 +56,13 @@ const Respond = ({modal, setModal}) => {
                          onChange={e=>setForm({...form, phone:e.target.value})}
                          required/>
 
-                <MyInput placeholder="Ваші побажання"
+                <MyInput style={{paddingBottom:'1.5rem', marginBottom:'1rem'}}
+                        placeholder="Ваші побажання"
                          type="text"
                          onChange={e=>setForm({...form, description:e.target.value})}
                          value={form.description}/>
 
-                <button type="submit" > Відправити</button>
+                <MyButton type="submit" > Відправити</MyButton>
             </form>
         </MyModal>
     );
