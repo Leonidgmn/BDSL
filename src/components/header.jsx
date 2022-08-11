@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import mainIcon from "../img/BDSL-logo.jpg";
 import { Link } from 'react-router-dom';
-import { MenuData } from './menuData';
+import { MenuData } from '../data/menuData';
+import MyButton from "./UI/button/MyButton";
 //taking array from MenuData.js and printing menu items List. So we can add more menu 
 //items to file MenuData.js to create more menu items. We use method map and callback function. And we put information in props.
 const Header = ({setModal}) => {
@@ -30,7 +31,7 @@ const Header = ({setModal}) => {
                                         </Link>
                                     </li> )
                             })}
-                            <li> <button onClick={()=>setModal(true)}> ЗАПИСАТИСЬ</button></li>
+                            <li> <MyButton onClick={()=>setModal(true)}> ЗАПИСАТИСЬ</MyButton></li>
                         </ul>
                     </div>
 
