@@ -4,6 +4,16 @@ header {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 100;
+}
+h2{
+    font-size: 1.4rem;
+    color: var(--main);
+    padding-top: 2rem;
+    margin: 2rem auto;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
 }
 
 .header {
@@ -54,7 +64,7 @@ header {
     top: 7rem;
     border-radius: 15px;
     opacity: 90%;
-    z-index: 1;
+    z-index: 100;
 
 }
 
