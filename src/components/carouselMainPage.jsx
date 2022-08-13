@@ -10,26 +10,35 @@ import mainImg2 from "../img/main-photo-2.jpg";
 const renderCarouselItem = (image) => {
 
     return (
-        <div  style={{
+        <div style={{
             background: `url('${image}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover",
             backgroundPosition: 'top center',
-            height: '85vh'
+            height: '90vh'
         }}>
         </div>
     )
 }
 
 
-const CarouselMainPage = ({children, ...props}) => {
+const CarouselMainPage = ({ children, ...props }) => {
     return (
         <section id='mainPage'>
-        <Carousel autoPlay={true} showThumbs={false} showStatus={false} interval={3000} stopOnHover={false} infiniteLoop={true}>
+            <Carousel
+                autoPlay={true}
+                showThumbs={false}
+                showStatus={false}
+                interval={3000}
+                stopOnHover={false}
+                infiniteLoop={true}
+                showIndicators={false}
+                showArrows={false}>
 
-            {renderCarouselItem(mainImg)}
-            {renderCarouselItem(mainImg1)}
-            {renderCarouselItem(mainImg2)}
+                {renderCarouselItem(mainImg)}
+                {renderCarouselItem(mainImg1)}
+                {renderCarouselItem(mainImg2)}
 
-        </Carousel>
+            </Carousel>
+
             {children}
         </section>
     )
