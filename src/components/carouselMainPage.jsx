@@ -8,8 +8,9 @@ import mainImg2 from "../img/main-photo-2.jpg";
 
 
 const renderCarouselItem = (image) => {
+
     return (
-        <div id='mainPage' style={{
+        <div  style={{
             background: `url('${image}')`, backgroundRepeat: "no-repeat", backgroundSize: "cover",
             backgroundPosition: 'top center',
             height: '85vh'
@@ -19,8 +20,9 @@ const renderCarouselItem = (image) => {
 }
 
 
-const CarouselMainPage = () => {
+const CarouselMainPage = ({children, ...props}) => {
     return (
+        <section id='mainPage'>
         <Carousel autoPlay={true} showThumbs={false} showStatus={false} interval={3000} stopOnHover={false} infiniteLoop={true}>
 
             {renderCarouselItem(mainImg)}
@@ -28,6 +30,8 @@ const CarouselMainPage = () => {
             {renderCarouselItem(mainImg2)}
 
         </Carousel>
+            {children}
+        </section>
     )
 }
 

@@ -8,6 +8,7 @@ import Schedule from "./components/schedule";
 import News from "./components/news";
 import Contacts from "./components/contacts";
 import Respond from "./components/respond";
+import Dance from "./components/dance";
 function App() {
     const[modal, setModal]=useState(false);
 
@@ -17,6 +18,7 @@ function App() {
             <Respond modal={modal} setModal={setModal}/>
             <Routes>
                 <Route path="/" element={<MainPage />}/>
+                <Route path="/dance" element={<Dance />}/>
                 <Route path="/schedule" element={<Schedule />}/>
                 <Route path="/team" element={<Team />}/>
                 <Route path="/news" element={<News />}/>
@@ -29,3 +31,5 @@ function App() {
 }
 
 export default App;
+
+//Alex 2 test commit
