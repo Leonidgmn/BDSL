@@ -1,0 +1,309 @@
+:root {
+    --white100: #fff;
+    --main-light: #DF0054;
+}
+
+html,
+body {
+    text-align: center;
+    height: 100%;
+}
+
+/* Select address */
+.select-address {
+    margin-bottom: 100px;
+}
+
+.title-select {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.address-items {
+    display: flex;
+}
+
+.address-item.active {
+    min-width: 44%;
+}
+
+.text-address-item {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white100);
+    margin: 5px 0 0 5px;
+}
+
+.address-item {
+    height: 250px;
+    margin: 7px;
+    width: 26%;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: table;
+    padding: 5px 10px;
+    border: none;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.address-item.first {
+    background: url(../img/item.jpg) 100% no-repeat;
+    background-size: cover;
+
+}
+
+.address-item.second {
+    background: url(../img/item4.jpg) 100% no-repeat;
+    background-size: cover;
+
+}
+
+.address-item.third {
+    background: url(../img/item1.jpg) 100% no-repeat;
+    background-size: cover;
+}
+
+span {
+    position: relative;
+    z-index: 1;
+    line-height: 24px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+
+.address-item:hover span {
+    color: var(--white100);
+}
+
+.address-item span:hover {
+    color: var(--white100);
+}
+
+.btnBefore,
+.btnAfter {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid #000;
+    border-width: 0;
+    transition: 0;
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    -ms-transition: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-color: var(--main-light);
+    border-radius: 8px;
+}
+
+.address-item .btnBefore {
+    right: 0;
+    bottom: 0;
+}
+
+.address-item .btnAfter {
+    left: 0;
+    top: 0;
+}
+
+.address-item:hover .btnBefore {
+    border-width: 0 0 3px 3px;
+}
+
+.address-item:hover .btnAfter {
+    border-width: 3px 3px 0 0;
+}
+
+.address-item:hover .btnAfter,
+.address-item:hover .btnBefore {
+    height: 100%;
+    width: 100%;
+    transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+    -ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+}
+
+/* Select dance */
+.select-dance-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 85px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.all-dance {
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.select-dance-item {
+    text-align: center;
+    float: left;
+    padding: 20px 10px;
+    border: 1px solid #000;
+    letter-spacing: .5px;
+    cursor: pointer;
+    color: #030202;
+    background: var(--white100);
+    z-index: 1;
+    margin-left: -3px;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.select-dance-item:hover {
+    background-color: var(--main-light);
+    color: var(--white100);
+    transition: .1s;
+}
+
+/* Schedule */
+
+.content-schedule {
+    position: relative;
+    width: 100vw;
+    padding-bottom: 70px;
+}
+
+.schedule-background {
+    background-image: url(../img/main-photo-1.jpg);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 0;
+    background-color: var(--main-light);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.schedule {
+    position: relative;
+}
+
+.schedule-title {
+    color: var(--white100);
+    z-index: 200;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 70px;
+    font-style: normal;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.name-schedule {
+    margin-top: 60px;
+}
+
+.hour-day-schedule {
+    margin-top: 50px;
+}
+
+.day-schedule {
+    color: var(--white100);
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.hour-schedule {
+    color: var(--white100);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.photo-schedule {
+    background-image: url(../img/schedule.jpg);
+    filter: grayscale(70%);
+    min-width: 205px;
+    min-height: 205px;
+    background-size: cover;
+}
+
+.photo-schedule:hover {
+    filter: brightness();
+}
+
+.name-dance-schedule {
+    color: var(--main-light);
+    font-style: normal;
+    padding: 0;
+}
+
+/* Media */
+@media screen and (max-width: 600px) {
+
+    .address-items {
+        flex-wrap: wrap;
+    }
+
+    .address-item {
+        width: 100%;
+    }
+
+    .select-dance-item {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100% !important;
+        max-height: 36px;
+    }
+
+    .all-dance {
+        width: 100%;
+    }
+
+    .schedule-background {
+        width: 100%;
+    }
+
+    .name-dance-schedule,
+    .teacher-schedule,
+    .number-room-schedule {
+        color: var(--white100);
+    }
+
+    .photo-schedule {
+        min-width: 120px;
+        min-height: 120px;
+    }
+
+    .name-schedule {
+        margin-top: 20px;
+    }
+
+    .hour-day-schedule {
+        margin-top: 10px;
+    }
+}
