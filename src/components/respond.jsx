@@ -38,7 +38,7 @@ const Respond = ({modal, setModal}) => {
             <form onSubmit={onSubmit}>
                 <MyInput type="text"
                          placeholder="Ваше ім'я"
-                         maxlength='12'
+                         maxLength='12'
                          value={form.name}
                          onChange={e=>setForm({...form, name:e.target.value})}
                          required/>
