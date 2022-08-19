@@ -396,14 +396,17 @@ footer {
 }
 .conteiner-contacts{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
+    align-items: center;
+
+}
+.map-containers{
+    margin: 40px 0;
     width: 100%;
-    height: 100%;
 }
 .map-container{
-    margin: 40px;
-    width: 800px;
-    height: 400px
+    width: 100%;
+    height: 400px;
 }
 .contacts-item h4{
     padding: 1rem;
@@ -413,9 +416,9 @@ footer {
     .conteiner-contacts{
     flex-direction: column;
     }
-    .map-container{
-        margin: 15px;
-        width: 350px;
-        height: 350px
+    .map-containers{
+        width: 70%;
+
+        height: 100%
     }
 }
