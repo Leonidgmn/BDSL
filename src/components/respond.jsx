@@ -30,7 +30,6 @@ const Respond = ({modal, setModal}) => {
             description:''})
     };
 
-
     return (
         <MyModal visible={modal} setVisible={setModal}>
             <h2>Вітаємо!</h2>

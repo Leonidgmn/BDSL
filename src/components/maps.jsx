@@ -6,6 +6,7 @@ const center = {
   lng: 24.025688,
 };
 
+
 function Maps() {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
