@@ -9,7 +9,6 @@ const Dance = () => {
                 <h2>В нашій школі Ви можете опанувати саме такі танці:</h2>
                 <div className="dance-list">
                     {danceData.map(dances => {
-                        console.log(dances)
                         return (
                             <div className='dance-items'>
                                 <h3>{dances.dance}</h3>

@@ -16,7 +16,7 @@ body {
 
 .title-select {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 500;
@@ -25,16 +25,17 @@ body {
 
 .address-items {
     display: flex;
+    justify-content: space-around; 
 }
 
 .address-item.active {
-    min-width: 44%;
+    /* min-width: 44%; */
 }
 
 .text-address-item {
     font-size: 1rem;
     font-weight: 700;
-    color: var(--white100);
+    color: black;
     margin: 5px 0 0 5px;
 }
 
@@ -220,15 +221,16 @@ span {
 .schedule-item {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 70px;
 }
 
 .name-schedule {
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 .hour-day-schedule {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .day-schedule {
