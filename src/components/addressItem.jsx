@@ -3,7 +3,6 @@ import React from 'react'
 
 const AddressItem = ({
   place = '',
-  sotrNewAllDanceArr = [],
   locationAndDance = [],
   setActiveAdress = () => {},
   setActiveDance = () => {}
@@ -11,19 +10,14 @@ const AddressItem = ({
   
   const onAdressClick = () => {
       setActiveAdress(place);
+    
+      
 
-      const location = locationAndDance.map(loca => {
-        const locaAdress = loca.adress;
-        return locaAdress
-        })
-        console.log(location);
-    if (place === location[0]) {
-        setActiveDance('BACHATA');
-    } else if (place === location[1]) {
-        setActiveDance('BACHATA');
-    } else if (place === location[2]) {
-        setActiveDance('KIZOMBA');
-    }
+      for (let i=0; i<=locationAndDance.length; i++) {
+        if (place === locationAndDance[i].adress) {
+          setActiveDance(locationAndDance[i].dance1[0])
+        }}
+
   }
 
   return (

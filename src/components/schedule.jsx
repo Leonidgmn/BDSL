@@ -24,6 +24,9 @@ const Schedule = (props) => {
  
   let duplicateDay = allDanceTime.filter((obj) => activeDay.includes(obj.day));
 
+console.log('filteredByAdresss: ', filteredByAdresss);
+console.log('allDanceTime: ', allDanceTime);
+console.log('duplicateDay: ', duplicateDay);
 
 
   return (
@@ -87,7 +90,28 @@ const Schedule = (props) => {
         <div className="content-schedule">
           <div className="schedule-background"></div>
           <div className="schedule content">
-            <h2 className="schedule-title">{ activeAdress }</h2>           
+            <h2 className="schedule-title">{ activeAdress }</h2>
+            {/* {duplicateDay.map((data, index) => {
+                return (
+                  <div>
+                  <div>{ data.day }</div>
+                  <div className="schedule-item">
+                              <div className="hour-day-schedule">
+                                  <p className="day-schedule">CEРЕДА</p>
+                                  <p className="hour-schedule">19:00</p>
+                                  <p className="day-schedule">СУБОТА</p>
+                                  <p className="hour-schedule">21:00</p>
+                              </div>
+                              <div className="photo-schedule"></div>
+                              <div className="name-schedule">
+                                  <h3 className='name-dance-schedule'>YOGA</h3>
+                                  <p className='teacher-schedule'>Олег & Оля</p>
+                                  <p className='number-room-schedule'>Зал №1</p>
+                              </div>
+                          </div></div>
+                
+              )}
+            )}         */}
             {allDanceTime.map((data, index) => (
               <ScheduleItem
               duplicateDay={duplicateDay}

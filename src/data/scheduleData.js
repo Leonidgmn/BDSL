@@ -46,7 +46,7 @@ export const scheduleData = [
         dance: 'BACHATA',
         day: 'ЧЕТВЕР',
         hour: '19:00 - 20:00',
-        level: 'B1-B2',
+        level: 'C1',
         teacher: 'Тарас & Галя',
     },
     {
@@ -157,7 +157,7 @@ export const locationAndDance = [
     },
 ];
 
-
+console.log(locationAndDance[0].dance1[0]);
 
     
 
