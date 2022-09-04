@@ -8,6 +8,7 @@ import MyButton from "./UI/button/MyButton";
 const Header = ({ setModal }) => {
   //this is hook useState. read in readme file
   const [burgerStatus, setBurger] = useState(true);
+  const [activeStatus, setActiveMenu] = useState("0");
 
   const showMenu = () => {
     setBurger(!burgerStatus);
@@ -16,11 +17,16 @@ const Header = ({ setModal }) => {
     setBurger(true);
   };
 
+  const activateMenu = (index) => {
+    setActiveMenu(index);
+  };
+
   return (
     <header>
       <div className="content">
         <div className="header">
-          <div>
+          <div id="signInDiv">
+           
             <img src={mainIcon} alt="logo" />
           </div>
           <div
@@ -32,11 +38,11 @@ const Header = ({ setModal }) => {
                 return (
                   <li
                     key={index}
-                    onClick={hideMenu} // https://ru.react.js.org/docs/lists-and-keys.html about keys props!!! important
-                    /*className={item.cName}*/
+                    onClick={() =>{activateMenu(index); hideMenu()}}// https://ru.react.js.org/docs/lists-and-keys.html about keys props!!! important
+                    className={index === activeStatus ? "active_menu_item" : null}
                   >
-                    <Link to={item.path}>
-                      <span>{item.title}</span>
+                    <Link to={item.path} onClick={hideMenu}>
+                      <span >{item.title}</span>
                     </Link>
                   </li>
                 );

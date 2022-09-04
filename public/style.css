@@ -57,12 +57,11 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     position: absolute;
     background: linear-gradient(to right, var(--main-light), var(--shadow));
-    padding: 4rem 8rem;
+    padding: 2rem 8rem;
     top: 7rem;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     opacity: 90%;
     z-index: 100;
 
@@ -104,11 +103,12 @@ h2{
 
 .navigation ul li button:hover {
     background: var(--main);
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
 }
 
 .navigation li {
-    margin: 1rem;
+    padding: 1rem;
+    min-width: 120px;
 }
 
 .navigation a {
@@ -117,9 +117,15 @@ h2{
     font-size: 0.9rem;
 }
 
-.navigation a:hover {
+.navigation li:hover {
     color: var(--main);
-    font-size: 1.1rem;
+    opacity: 90%;
+    background-color: antiquewhite;
+    border: blue 1px solid;
+    
+}
+.active_menu_item {
+    border: blue 1px solid;
 }
 
 .navigation-button {
