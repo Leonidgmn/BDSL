@@ -1,20 +1,23 @@
-.myInput{
+.myInput {
     width: 100%;
     border: 1px solid var(--main-light);
     padding: 0.4rem;
     border-radius: 3px;
     margin-top: 1rem;
 }
-.myInput:focus{
+
+.myInput:focus {
     border: 3px solid var(--main-light);
     outline: none;
     padding: 0.7rem;
 
 }
-.myInput:after{
+
+.myInput:after {
     transition: .2s ease-in-out;
 }
-.myInput:invalid{
+
+.myInput:invalid {
     background: #ffdddd;;
 
 }

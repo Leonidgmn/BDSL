@@ -159,12 +159,8 @@ export const locationAndDance = [
 
 console.log(locationAndDance[0].dance1[0]);
 
-    
 
-
-
-
-export const allDanceTypes= [...new Set(scheduleData.map((a) => a.dance))];
+export const allDanceTypes = [...new Set(scheduleData.map((a) => a.dance))];
 // export const locationsAndDances = (arr) => {
 //     const result = [];
 
@@ -174,10 +170,10 @@ export const allDanceTypes= [...new Set(scheduleData.map((a) => a.dance))];
 //         }
 //     })}
 
-    // return result;
-    // const foo = [
-    //     {
-    //         adresss: '',
-    //         danceTypes: [ '', ]},
+// return result;
+// const foo = [
+//     {
+//         adresss: '',
+//         danceTypes: [ '', ]},
 
-    // ]
+// ]

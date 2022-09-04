@@ -25,7 +25,7 @@ body {
 
 .address-items {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 .address-item.active {
@@ -60,19 +60,19 @@ body {
 }
 
 .address-item.first {
-    background: url(../img/item.jpg) 100% no-repeat;
+    background: url(../../img/item.jpg) 100% no-repeat;
     background-size: cover;
 
 }
 
 .address-item.second {
-    background: url(../img/item4.jpg) 100% no-repeat;
+    background: url(../../img/item4.jpg) 100% no-repeat;
     background-size: cover;
 
 }
 
 .address-item.third {
-    background: url(../img/item1.jpg) 100% no-repeat;
+    background: url(../../img/item1.jpg) 100% no-repeat;
     background-size: cover;
 }
 
@@ -190,7 +190,7 @@ span {
 }
 
 .schedule-background {
-    background-image: url(../img/main-photo-1.jpg);
+    background-image: url(../../img/main-photo-1.jpg);
     position: absolute;
     display: block;
     left: 0;
@@ -247,7 +247,7 @@ span {
 }
 
 .photo-schedule {
-    background-image: url(../img/schedule.jpg);
+    background-image: url(../../img/schedule.jpg);
     filter: grayscale(70%);
     min-width: 205px;
     min-height: 205px;

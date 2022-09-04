@@ -1,10 +1,10 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import {Carousel} from 'react-responsive-carousel';
 
-import mainImg from "../img/PeopleTrial.jpg";
-import mainImg1 from "../img/main-photo-1.jpg";
-import mainImg2 from "../img/main-photo-2.jpg";
+import mainImg from "../../img/PeopleTrial.jpg";
+import mainImg1 from "../../img/main-photo-1.jpg";
+import mainImg2 from "../../img/main-photo-2.jpg";
 
 
 const renderCarouselItem = (image) => {
@@ -20,7 +20,7 @@ const renderCarouselItem = (image) => {
 }
 
 
-const CarouselMainPage = ({ children, ...props }) => {
+const CarouselMainPage = ({children, ...props}) => {
     return (
         <section id='mainPage'>
             <Carousel

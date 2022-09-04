@@ -13,9 +13,9 @@ const Contacts = () => {
                     <h4>+38 097 758 12 55</h4>
                     <h3>E-mail:</h3>
                     <h4>bdslviv@gmail.com</h4>
-                </div>             
+                </div>
                 <Maps/>
-             </div> 
+            </div>
         </section>
     );
 };

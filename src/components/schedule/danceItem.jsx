@@ -1,11 +1,9 @@
 import React from 'react'
 
-function DanceItem (props) {
+function DanceItem(props) {
 
-
-    function onDanceClick () {
-      props.setActiveDance(props.dance)
-        
+    function onDanceClick() {
+        props.setActiveDance(props.dance)
     }
 
     return (

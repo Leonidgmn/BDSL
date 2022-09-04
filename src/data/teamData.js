@@ -1,11 +1,11 @@
 export const teamData = [{
-        id: 1,
-        name: 'Катерина Патрон',
-        dance: 'Kizomba',
-        photo: 'https://i.postimg.cc/3RkwyX6R/Ihor-Olesia1.jpg',
-        description: 'Танцювальний талант і володіння різними стилями танцю. Музичний слух. Творче мислення і бачення',
-        quote: 'якась розумна цитата викладача'
-    },
+    id: 1,
+    name: 'Катерина Патрон',
+    dance: 'Kizomba',
+    photo: 'https://i.postimg.cc/3RkwyX6R/Ihor-Olesia1.jpg',
+    description: 'Танцювальний талант і володіння різними стилями танцю. Музичний слух. Творче мислення і бачення',
+    quote: 'якась розумна цитата викладача'
+},
     {
         id: 2,
         name: 'Олена Патрон',

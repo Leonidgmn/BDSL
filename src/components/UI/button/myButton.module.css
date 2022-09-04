@@ -1,4 +1,4 @@
-.myBtn{
+.myBtn {
     background: var(--main-light);
     border: none;
     border-radius: 5px;
@@ -8,7 +8,8 @@
     font-weight: bold;
     cursor: pointer;
 }
-.myBtn:hover{
+
+.myBtn:hover {
     background: var(--main);
     /* font-size: 1.2rem; */
 }

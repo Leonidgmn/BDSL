@@ -1,5 +1,5 @@
 import React from 'react';
-import {danceData} from '../data/danceData'
+import {danceData} from '../../data/danceData'
 
 const Dance = () => {
 
@@ -8,9 +8,9 @@ const Dance = () => {
             <div className="content">
                 <h2>В нашій школі Ви можете опанувати саме такі танці:</h2>
                 <div className="dance-list">
-                    {danceData.map(dances => {
+                    {danceData.map((dances, index) => {
                         return (
-                            <div className='dance-items'>
+                            <div className='dance-items' key={index}>
                                 <h3>{dances.dance}</h3>
                                 <h4>{dances.title}</h4>
                                 <div className='dance-inside-item'>
