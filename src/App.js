@@ -21,7 +21,7 @@ function App() {
         let userObject = jwt_decode(response.credential)
         console.log(userObject)
         setUser(userObject)
-       // document.getElementById("signInDiv").hidden = true;
+        document.getElementById("signInDiv").hidden = true;
 
     }
     
