@@ -1,35 +1,34 @@
-import React from 'react'
-
+import React from "react";
 
 const AddressItem = ({
-                         place = '',
-                         locationAndDance = [],
-                         setActiveAdress = () => {
-                         },
-                         setActiveDance = () => {
-                         }
-                     }) => {
+  place = "",
+  locationAndDance = [],
+  activeAdress = "",
+  setActiveAdress = () => {},
+  setActiveDance = () => {},
+}) => {
+  const isActive = place === activeAdress ? "active" : "";
+  const onAdressClick = () => {
+    setActiveAdress(place);
 
-    const onAdressClick = () => {
-        setActiveAdress(place);
-
-
-        for (let i = 0; i <= locationAndDance.length; i++) {
-            if (place === locationAndDance[i].adress) {
-                setActiveDance(locationAndDance[i].dance1[0])
-            }
-        }
-
+    for (let i = 0; i <= locationAndDance.length; i++) {
+      if (place === locationAndDance[i].adress) {
+        setActiveDance(locationAndDance[i].dance1[0]);
+      }
     }
+  };
 
-    return (
-        <a onClick={onAdressClick} href="#" className='address-item active first'>
-      <span
-          className='text-address-item'>{place}</span>
-            <span className="btnBefore"></span>
-            <span className="btnAfter"></span>
-        </a>
-    )
-}
+  return (
+    <a
+      onClick={onAdressClick}
+      href="#"
+      className={`address-item ${isActive} first`}
+    >
+      <span className="text-address-item">{place}</span>
+      <span className="btnBefore"></span>
+      <span className="btnAfter"></span>
+    </a>
+  );
+};
 
 export default AddressItem;
