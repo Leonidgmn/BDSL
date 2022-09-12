@@ -14,11 +14,15 @@ import {
 import AddressItem from "./addressItem";
 import DanceItem from "./danceItem";
 import ScheduleDayItem from "./scheduleDayItem";
+import MyModal from "../UI/modal/MyModal";
 
 
 
 
 const Schedule = (props) => {
+
+  const [modal, setModal] = useState(false);
+
   const [activeAdress, setActiveAdress] = useState("Львів, Лемківська 15");
 
   const filteredByAdresss = scheduleData.filter((obj) =>
@@ -110,7 +114,8 @@ const Schedule = (props) => {
           </div>
         </div>
       </section>
-      <section>
+      <button onClick={() => setModal(true)}>Додати години</button>
+      <MyModal visible={modal} setVisible={setModal}>
         <form action="">
           <select name="address" id="">
             {locations.map((data) => {
@@ -154,7 +159,7 @@ const Schedule = (props) => {
           </select>
           <button type="submit">Додати</button>
         </form>
-      </section>
+      </MyModal>
     </>
   );
 };
