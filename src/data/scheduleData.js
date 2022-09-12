@@ -199,6 +199,105 @@ export const locationAndDance = [
 
 
 export const allDanceTypes = [...new Set(scheduleData.map((a) => a.dance))];
+
+
+export const hourDataList = [
+    {value: '00', lable: '00'},
+    {value: '01', lable: '01'},
+    {value: '02', lable: '02'},
+    {value: '03', lable: '03'},
+    {value: '04', lable: '04'},
+    {value: '05', lable: '05'},
+    {value: '06', lable: '06'},
+    {value: '07', lable: '07'},
+    {value: '08', lable: '08'},
+    {value: '09', lable: '09'},
+    {value: '10', lable: '10'},
+    {value: '11', lable: '11'},
+    {value: '12', lable: '12'},
+    {value: '13', lable: '13'},
+    {value: '14', lable: '14'},
+    {value: '15', lable: '15'},
+    {value: '16', lable: '16'},
+    {value: '17', lable: '17'},
+    {value: '18', lable: '18'},
+    {value: '19', lable: '19'},
+    {value: '20', lable: '20'},
+    {value: '21', lable: '21'},
+    {value: '22', lable: '22'},
+    {value: '23', lable: '23'},
+    {value: '24', lable: '24'},
+]
+
+export const minuteDataList = [
+    {value: '00', lable: '00'},
+    {value: '05', lable: '05'},
+    {value: '10', lable: '10'},
+    {value: '15', lable: '15'},
+    {value: '20', lable: '20'},
+    {value: '25', lable: '25'},
+    {value: '30', lable: '30'},
+    {value: '35', lable: '35'},
+    {value: '40', lable: '40'},
+    {value: '45', lable: '45'},
+    {value: '50', lable: '50'},
+    {value: '55', lable: '55'},
+]
+
+export const levelDataList = [
+    {value: 'A1', lable: 'A1'},
+    {value: 'A2', lable: 'A2'},
+    {value: 'B1', lable: 'B1'},
+    {value: 'B2', lable: 'B2'},
+    {value: 'B1-B2', lable: 'B1-B2'},
+    {value: 'C1', lable: 'C1'},
+    {value: 'all', lable: 'ДЛЯ УСІХ'},
+    {value: 'intensive', lable: 'ІНТЕНСИВ'},
+    {value: 'new', lable: 'НОВИЙ НАБІР'},
+    {value: 'special', lable: 'СПЕЦКУРС'},
+]
+
+export const hallDataList = [
+    {value: 'grey', lable: 'СІРИЙ'},
+    {value: 'pink', lable: 'РОЖЕВИЙ'},
+    {value: 'violet', lable: 'ФІОЛЕТОВИЙ'},
+]
+
+export const danceDataList = [
+    {value: 'bachata', lable: 'BACHATA'},
+    {value: 'bachataLady', lable: 'BACHATA LADY SOLO'},
+    {value: 'ballet', lable: 'BODY BALLET'},
+    {value: 'salsaCuba', lable: 'CUBAN SALSA'},
+    {value: 'kizomba', lable: 'KIZOMBA'},
+    {value: 'salsa', lable: 'SALSA'},
+    {value: 'salsaLa', lable: 'SALSA LA'},
+    {value: 'salsaNy', lable: 'SALSA NY'},
+    {value: 'salsaSon', lable: 'SALSA SON'},
+    {value: 'urbanKizomba', lable: 'URBAN-KIZ'},
+    {value: 'yoga', lable: 'YOGA'},
+    {value: 'zouk', lable: 'ZOUK'},
+    {value: 'zumba', lable: 'ZUMBA'},
+]
+
+export const teacherDataList = [
+    {lable: 'Віталік & Женя'},
+    {lable: 'Галя'},
+    {lable: 'Іван & Оля'},
+    {lable: 'Ігор & Олеся'},
+    {lable: 'Ігор & Мія'},
+    {lable: 'Марина'},
+    {lable: 'Мико & Женя'},
+    {lable: 'Михайло & Женя'},
+    {lable: 'Олег & Оля'},
+    {lable: 'Олег & Марта'},
+    {lable: 'Олексій'},
+    {lable: 'Олена'},
+    {lable: 'Слава & Юля'},
+    {lable: 'Тарас & Галя'},
+    {lable: 'Тарас'},
+    {lable: 'Ярослав & Іра'},
+  
+]
 // export const locationsAndDances = (arr) => {
 //     const result = [];
 

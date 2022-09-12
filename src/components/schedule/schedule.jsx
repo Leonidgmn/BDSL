@@ -4,10 +4,19 @@ import {
   scheduleData,
   locations,
   locationAndDance,
+  hourDataList,
+  minuteDataList,
+  levelDataList,
+  hallDataList,
+  danceDataList,
+  teacherDataList,
 } from "../../data/scheduleData";
 import AddressItem from "./addressItem";
 import DanceItem from "./danceItem";
 import ScheduleDayItem from "./scheduleDayItem";
+
+
+
 
 const Schedule = (props) => {
   const [activeAdress, setActiveAdress] = useState("Львів, Лемківська 15");
@@ -100,6 +109,51 @@ const Schedule = (props) => {
             ))}
           </div>
         </div>
+      </section>
+      <section>
+        <form action="">
+          <select name="address" id="">
+            {locations.map((data) => {
+              return <option value="">{data}</option>;
+            })}
+          </select>
+          <select name="dance" id="">
+            {danceDataList.map((data) => {
+              return <option value="">{data.lable}</option>;
+            })}
+          </select>
+          <select name="day" id="">
+            {week.map((data) => {
+              return <option value="">{data}</option>;
+            })}
+          </select>
+          <select name="hour" id="">
+            {hourDataList.map((data) => {
+              return <option value="">{data.lable}</option>;
+            })}
+          </select>
+          <select name="minute" id="">
+            {minuteDataList.map((data) => {
+              return <option value="">{data.lable}</option>;
+            })}
+          </select>
+          <select name="level" id="">
+            {levelDataList.map((data) => {
+              return <option value="">{data.lable}</option>;
+            })}
+          </select>
+          <select name="hall" id="">
+            {hallDataList.map((data) => {
+              return <option value="">{data.lable}</option>;
+            })}
+          </select>
+          <select name="teacher" id="">
+            {teacherDataList.map((data) => {
+              return <option value="">{data.lable}</option>;
+            })}
+          </select>
+          <button type="submit">Додати</button>
+        </form>
       </section>
     </>
   );
