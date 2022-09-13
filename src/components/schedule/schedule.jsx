@@ -114,6 +114,7 @@ const Schedule = (props) => {
           </div>
         </div>
       </section>
+      
       <button onClick={() => setModal(true)}>Додати години</button>
       <MyModal visible={modal} setVisible={setModal}>
         <form action="">
