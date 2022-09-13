@@ -15,6 +15,7 @@ import AddressItem from "./addressItem";
 import DanceItem from "./danceItem";
 import ScheduleDayItem from "./scheduleDayItem";
 import MyModal from "../UI/modal/MyModal";
+import MyButton from "../UI/button/MyButton";
 
 
 
@@ -115,7 +116,7 @@ const Schedule = (props) => {
         </div>
       </section>
       
-      <button onClick={() => setModal(true)}>Додати години</button>
+      <MyButton onClick={() => setModal(true)}>Додати години</MyButton>
       <MyModal visible={modal} setVisible={setModal}>
         <form action="">
           <select name="address" id="">
